@@ -1,9 +1,9 @@
 # 🤖 AI-Powered Workflow Utilities
 
-A collection of practical automation scripts developed using gemini cli as the coding assistant. This repository showcases the "sub-task" part of a RAG pipeline.
+A collection of practical automation scripts developed using gemini cli as the main coding assistant, but also with other models via the vscode co-pilot integration when errors were found or generated code through gemini was needless complex (and thus harder to debug)
 
 ► Overview
-This repository is a showcase of my journey in building practical, AI-assisted tools. The scripts here are designed to integrate with the output of Retrieval-Augmented Generation (RAG) systems, which I use to create relevant and timely social media content for the small businesses I partner with.
+This repository is a showcase of my journey in building practical, AI-assisted tools as well as showing the "sub-task" parts of a RAG pipeline. The scripts here are designed to integrate with the output of Retrieval-Augmented Generation (RAG) systems, which I use to create relevant and timely social media content for the small businesses I partner with.
 
 While the core RAG and content generation scripts remain in a private repo for now, this public repository contains the operational tools that bring that content to life—automating tasks like:
 
@@ -23,7 +23,6 @@ Why? My focus for these initial versions was to gain a deep, foundational unders
 ► Project Structure
 The repository is organized by function to maintain clarity and scalability.
 
-.
 ├── gcs_utilities/       # Scripts for Google Cloud Storage tasks
 ├── instagram_automation/  # Tools for posting and managing Instagram content
 ├── video_processing/      # Scripts for creating and editing video files
