@@ -1,46 +1,67 @@
-# 🤖 AI-Powered Workflow Utilities
+# 🤖 AI‑Powered Workflow Utilities
 
-A collection of practical automation scripts developed using gemini cli as the main coding assistant, but also with other models via the vscode co-pilot integration when errors were found or generated code through gemini was needless complex (and thus harder to debug)
+A collection of practical automation scripts developed using the Google Gemini CLI as the main coding assistant (with VSCode Copilot as a fallback). My goal is to build, iterate, and solve real‑world problems using the latest AI developer tools.
 
-► Overview
-This repository is a showcase of my journey in building practical, AI-assisted tools as well as showing the "sub-task" parts of a RAG pipeline. The scripts here are designed to integrate with the output of Retrieval-Augmented Generation (RAG) systems, which I use to create relevant and timely social media content for the small businesses I partner with.
+---
 
-While the core RAG and content generation scripts remain in a private repo for now, this public repository contains the operational tools that bring that content to life—automating tasks like:
+## 🚀 Overview
 
-Video & Image Processing: Creating video reels from still images and open-source audio.
+This repository showcases my journey in building practical, AI‑assisted tools and the “sub‑task” parts of a Retrieval‑Augmented Generation (RAG) pipeline. The scripts here take RAG output and turn it into runnable automations:
 
-Cloud Integration: Uploading and managing media assets on Google Cloud Services.
+- **Video & Image Processing**  
+  Creating video reels from still images and open‑source audio.
 
-Social Media Automation: Posting generated content directly to platforms like Instagram via their APIs.
+- **Cloud Integration**  
+  Uploading and managing media assets on Google Cloud Storage.
 
-My goal is to demonstrate a hands-on ability to build, iterate, and solve problems using the latest generation of AI developer tools.
+- **Social Media Automation**  
+  Posting generated content directly to platforms like Instagram via their APIs.
 
-► A Note on Methodology
-You might notice that for tasks like posting to Instagram, I am interacting directly with the Graph API instead of using higher-level abstractions or third-party libraries or even MCP. This was a deliberate choice.
+My goal is to demonstrate a hands‑on ability to build, iterate, and solve problems using the latest generation of AI developer tools.
 
-Why? My focus for these initial versions was to gain a deep, foundational understanding of the entire workflow, especially the complexities of authentication, app permissions, and token management. By avoiding abstractions, I was able to effectively debug and iterate on the core mechanics, ensuring a robust and reliable connection. This hands-on approach was important for me at this stage to make sure any automation was dependable.
+---
 
-► Project Structure
-The repository is organized by function to maintain clarity and scalability.
+## 🔍 A Note on Methodology
 
-├── gcs_utilities/       # Scripts for Google Cloud Storage tasks
-├── instagram_automation/  # Tools for posting and managing Instagram content
-├── video_processing/      # Scripts for creating and editing video files
-└── ...                    # Additional utility folders
+> For tasks like posting to Instagram, I interact *directly* with the Graph API instead of using higher‑level wrappers or third‑party libraries (e.g., MCP).
 
-► Tech Stack
-Primary Language: Python
+**Why?**  
 
-AI Development: Google Gemini CLI & API
+1. Deeply understand authentication, permissions, and token management
+2. Debug and iterate on the core mechanics  
+3. Ensure a robust, reliable connection
 
-APIs & Services:
+---
 
-Instagram Graph API
+## 🗂 Project Structure
 
-Google Cloud Storage API
+\`\`\`text
+├── gcs_utilities/          # Scripts for Google Cloud Storage tasks  
+├── instagram_automation/   # Tools for posting & managing Instagram content  
+├── video_processing/       # Scripts for creating and editing video files  
+└── ...                     # Additional utility folders
+\`\`\`
 
-Freesound API (for open-source audio)
+---
 
-Core Libraries: requests, google-cloud-storage, Pillow, moviepy
+## 🛠 Tech Stack
 
-This repository represents an active and ongoing effort. Thank you for visiting.
+- **Primary Language:** Python  
+- **AI Development:** Google Gemini CLI & API  
+
+**APIs & Services:**  
+
+- Instagram Graph API  
+- Google Cloud Storage API  
+- Freesound API (for open‑source audio)  
+
+**Core Libraries:**  
+
+- \`requests\`
+- \`google-cloud-storage\`  
+- \`Pillow\`  
+- \`moviepy\`
+
+---
+
+> This repository represents an active, ongoing effort. Thank you for visiting!_
