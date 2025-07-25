@@ -47,7 +47,7 @@ My goal is to demonstrate a hands‑on ability to build, iterate, and solve prob
 ## 🛠 Tech Stack
 
 - **Primary Language:** Python  
-- **AI Development:** Google Gemini CLI & API  
+- **AI Development:** Google Gemini CLI, Claude Code & API's  
 
 **APIs & Services:**  
 
@@ -57,10 +57,10 @@ My goal is to demonstrate a hands‑on ability to build, iterate, and solve prob
 
 **Core Libraries:**  
 
-- \requests\
-- \google-cloud-storage\  
-- \Pillow\  
-- \moviepy\
+- requests
+- google-cloud-storage  
+- Pillow  
+- moviepy
 
 ---
 
