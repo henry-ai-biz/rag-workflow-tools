@@ -35,7 +35,7 @@ My goal is to demonstrate a hands‑on ability to build, iterate, and solve prob
 
 ## 🗂 Project Structure
 
-\`\`\`text
+\`\`\`
 ├── gcs_utilities/          # Scripts for Google Cloud Storage tasks  
 ├── instagram_automation/   # Tools for posting & managing Instagram content  
 ├── video_processing/       # Scripts for creating and editing video files  
@@ -57,11 +57,11 @@ My goal is to demonstrate a hands‑on ability to build, iterate, and solve prob
 
 **Core Libraries:**  
 
-- \`requests\`
-- \`google-cloud-storage\`  
-- \`Pillow\`  
-- \`moviepy\`
+- \requests\
+- \google-cloud-storage\  
+- \Pillow\  
+- \moviepy\
 
 ---
 
-> This repository represents an active, ongoing effort. Thank you for visiting!_
+> This repository represents an active, ongoing effort. Thank you for visiting!
