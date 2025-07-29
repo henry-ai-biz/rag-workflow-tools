@@ -10,7 +10,6 @@ import sys
 import yaml
 from pathlib import Path
 from google.cloud import storage
-from google.cloud.exceptions import PreconditionFailed
 from google.oauth2 import service_account
 
 # --- Configuration Loading ---
@@ -88,9 +87,8 @@ def main():
 
     print(f"→ Uploading '{local_file.name}' to 'gs://{config['bucket_name']}/{config['destination_blob_name']}'...")
     try:
-        # if_generation_match=0 is a precondition that makes the upload fail
-        # if an object with that name already exists. This prevents overwrites.
-        blob.upload_from_filename(str(local_file), if_generation_match=0)
+        # Upload file (allows overwriting existing files)
+        blob.upload_from_filename(str(local_file))
         print("✅ Upload successful. The file remains private.")
         print("\n---")
         print("Object Details:")
@@ -99,10 +97,6 @@ def main():
         print(f"  GCS Path: gs://{config['bucket_name']}/{config['destination_blob_name']}")
         print("---")
 
-    except PreconditionFailed:
-        print(f"❌ UPLOAD FAILED: A file named '{config['destination_blob_name']}' already exists in this bucket.")
-        print("   Please rename the local file, change 'destination_blob_name' in your config, or delete the existing object.")
-        sys.exit(1)
     except Exception as e:
         print(f"❌ An unexpected error occurred during upload: {e}")
         sys.exit(1)
